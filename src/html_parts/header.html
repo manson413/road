@@ -1,0 +1,150 @@
+<!--<div class="d-flex">-->
+<!--    <div class="d-flex">-->
+<!--        width - <span id="ww"></span>-->
+<!--    </div>-->
+<!--    <div class="d-flex">-->
+<!--        height - <span id="wh"></span>-->
+<!--    </div>-->
+<!--    <span> - </span>-->
+<!--    <div id="list"></div>-->
+<!--</div>-->
+
+
+<div class="header-wrapper">
+
+    <header class="header" role="header">
+        <div class="container">
+
+            <div class="header-inner-wrapper">
+                <div class="logo kharkiv-logo">
+                    <div class="logo-img" title="Харківська обласна державна адміністрація">
+                        <img src="img/COA_of_Kharkiv_Oblast.svg" alt="Харківська обласна державна адміністрація">
+                    </div>
+                    <span class="logo-text">Харківська обласна державна адміністрація</span>
+                </div>
+                <a href="/" class="logo dp-logo" title="Головна">
+                    <div class="logo-img">
+                        <img src="img/logo.svg" alt="Державне підприємство «Дороги Харківщини»" loading="lazy">
+                    </div>
+                    <span class="logo-text">Державне підприємство «Дороги Харківщини»</span>
+                </a>
+                <div class="header-contacts">
+                    <div class="item">
+                        <a href="tel:380573368283" class="item-title">(057) 336-82-83</a>
+                        <div class="item-text">Facebook: <a href="https://www.facebook.com/dpdorKharkiv/" target="_blank">@dpdorKharkiv</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Харків: <span id="temp"></span></div>
+                        <div class="item-text">Перейти на <a href="https://www.gismeteo.ua/weather-kharkiv-5053/" target="_blank">Gismetio</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="language-toggle">
+                            <a href="" class="language-btn active">Ua</a>
+                            <a href="" class="language-btn">Ru</a>
+                        </div>
+                        <!-- /.language-toggle -->
+                    </div>
+                </div>
+                <!-- /.header-contacts -->
+
+                <div class="mobile-menu-btn-wrap hamburger hamburger--spin-r">
+                    <button type="button" class="hamburger-box mobile-menu-btn">
+                        <span class="hamburger-inner"></span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- /.header-inner-wrapper -->
+
+        </div>
+    </header>
+
+    <nav class="main-menu-wrap" id="mainMenuWrapper">
+        <div class="container">
+            <div class="d-block d-md-flex align-items-center justify-content-between">
+                <ul class="main-menu" id="mainMenu">
+                    <li>
+                        <a href="">Про ДП «Дороги Харківщини»</a>
+                        <ul>
+                            <li><a href="">Загальна інформація</a></li>
+                            <li><a href="">Керівництво</a></li>
+                            <li><a href="">Структура</a></li>
+                            <li><a href="">Контакти</a></li>
+                            <li><a href="">Відкриті вакансії</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Діяльність</a>
+                        <ul>
+                            <li><a href="">Ремонт доріг</a></li>
+                            <li><a href="">Експлуатаційне утримання</a></li>
+                            <li><a href="">Фінансово-економічна інформація</a></li>
+                            <li><a href="">Події</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Водіям та перевізникам</a>
+                        <ul>
+                            <li><a href="">Великогабаритні та великовагові транспортні засоби</a></li>
+                            <li><a href="">Порядок подання заявок та отримання погоджень</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Зв’язок з громадськістю</a>
+                        <ul>
+                            <li><a href="">Звернення громадян</a></li>
+                            <li><a href="">Порядок складання та подання запитів на доступ до публічної інформації</a></li>
+                            <li><a href="">Графік особистого прийому громадян</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Галерея</a>
+                        <ul>
+                            <li><a href="">Фото</a></li>
+                            <li><a href="">Відео</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.main-menu -->
+                <div id="mobile-submenu-wrap" class="mobile-submenu-wrap"></div>
+                <!-- /#mobile-submenu-wrap -->
+                <button type="button" class="search-btn">
+                    <svg class="search-icon icon-sprite svg-icon" style="width: 18px; height: 18px;">
+                    	<use xlink:href="img/symbol_sprite.svg#icon-search-icon"></use>
+                    </svg>
+                    <svg class="close-icon icon-sprite svg-icon" style="width: 18px; height: 18px;">
+                        <use xlink:href="img/symbol_sprite.svg#icon-close-icon"></use>
+                    </svg>
+                    <span class="btn-text">Пошук</span>
+                </button>
+            </div>
+        </div>
+        <div id="main-menu-overlay"></div>
+        <!-- /#main-menu-overlay -->
+        <div id="desktop-search-wrap" class="desktop-search-wrap">
+            <div class="container">
+                <div class="search-block">
+                    <form action="/">
+                        <div class="d-block d-lg-flex align-items-end">
+                            <div class="input-wrap">
+                                <label class="input-title" for="search-field">Пошук</label>
+                                <input type="text" class="form-control" id="search-field">
+                            </div>
+                            <!-- /.input-wrap -->
+                            <input type="submit" class="btn yellow-btn" value="Знайти">
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.search-block -->
+            </div>
+        </div>
+    </nav>
+
+</div>
+<!-- /.header-wrapper -->
+
+
+
+
+
