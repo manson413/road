@@ -87,6 +87,11 @@ h4, .h4 {
   line-height: 32px;
   margin-bottom: 12px;
 }
+h5, .h5, h6, .h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'SourceSerifPro-Bold', serif;
+}
 
 p {
   margin: 0 0 16px;
@@ -122,6 +127,7 @@ ol {
 
 .btn {
   @include transition();
+  display: inline-block;
   font-family: 'SourceSansPro-Regular', serif;
   font-size: 16px;
   line-height: 24px;
@@ -134,9 +140,18 @@ ol {
   &.yellow-btn {
     background: $yellow-color;
     color: $dark-blue;
-
     &:hover {
       background: #FFE362;;
+    }
+  }
+  &.transparent-btn {
+    border: 1px solid $blue-color;
+    color: $blue-color;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    &:hover {
+      background: $blue-color;
+      color: #fff;
     }
   }
 }
@@ -601,6 +616,11 @@ ol {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+.post-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ACACAC;
+  margin-bottom: 48px;
+}
 .post-img {
   background-repeat: no-repeat;
   background-position: center;
@@ -610,6 +630,62 @@ ol {
 .post-title {
   color: $blue-color;
   font-family: 'SourceSerifPro-Bold', serif;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.post-date {
+  display: block;
+  font-family: 'SourceSansPro-Regular', serif;
+  color: #5E5E5E;
+  margin-bottom: 24px;
+}
+.post-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -16px;
+  margin-right: -16px;
+  .post-img, .post-text {
+    flex-grow: 1;
+    min-width: 50%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.cards-block {
+  padding-top: 48px;
+  padding-bottom: 80px;
+  div[class^="col"] {
+    margin-top: 32px;
+  }
+  .row {
+    margin-top: -32px;
+  }
+}
+.card-item {
+  @include transition();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 192px;
+  background: #fff;
+  padding: 24px;
+  text-decoration: none;
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 23, 46, 0.1);
+  }
+}
+.card-item-title {
+  margin-bottom: 24px;
+}
+.card-item-img {
+  width: 48px;
+  height: 48px;
+  margin-right: auto;
 }
 
 @import 'media';

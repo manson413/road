@@ -454,6 +454,16 @@ h4,
     margin-bottom: 12px;
 }
 
+h5,
+.h5,
+h6,
+.h6
+{
+    font-family: 'SourceSerifPro-Bold', serif; 
+    font-size: 16px;
+    line-height: 24px;
+}
+
 p
 {
     margin: 0 0 16px;
@@ -500,6 +510,8 @@ ol
     font-size: 16px;
     line-height: 24px;
 
+    display: inline-block;
+
     padding: 12px 24px;
 
     cursor: pointer; 
@@ -519,6 +531,19 @@ ol
 .btn.yellow-btn:hover
 {
     background: #ffe362;
+}
+.btn.transparent-btn
+{
+    padding-top: 11px;
+    padding-bottom: 11px; 
+
+    color: #00458a;
+    border: 1px solid #00458a;
+}
+.btn.transparent-btn:hover
+{
+    color: #fff; 
+    background: #00458a;
 }
 
 .form-control
@@ -1192,6 +1217,14 @@ ol
     padding-bottom: 96px;
 }
 
+.post-item
+{
+    margin-bottom: 48px; 
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid #acacac;
+}
+
 .post-img
 {
     padding-bottom: 56.25%; 
@@ -1203,9 +1236,118 @@ ol
 
 .post-title
 {
-    font-family: 'SourceSerifPro-Bold', serif; 
+    font-family: 'SourceSerifPro-Bold', serif;
+
+    text-decoration: none; 
 
     color: #00458a;
+}
+.post-title:hover
+{
+    text-decoration: underline;
+}
+
+.post-date
+{
+    font-family: 'SourceSansPro-Regular', serif;
+
+    display: block;
+
+    margin-bottom: 24px; 
+
+    color: #5e5e5e;
+}
+
+.post-content
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    margin-right: -16px; 
+    margin-left: -16px;
+
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+            align-items: flex-start;
+}
+.post-content .post-img,
+.post-content .post-text
+{
+    min-width: 50%;
+    padding-right: 16px; 
+    padding-left: 16px;
+
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+
+.cards-block
+{
+    padding-top: 48px;
+    padding-bottom: 80px;
+}
+.cards-block div[class^='col']
+{
+    margin-top: 32px;
+}
+.cards-block .row
+{
+    margin-top: -32px;
+}
+
+.card-item
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    height: 100%;
+    min-height: 192px;
+    padding: 24px;
+
+    -webkit-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
+    text-decoration: none; 
+
+    background: #fff;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.card-item:hover
+{
+    -webkit-box-shadow: 0 8px 24px rgba(0, 23, 46, .1);
+            box-shadow: 0 8px 24px rgba(0, 23, 46, .1);
+}
+
+.card-item-title
+{
+    margin-bottom: 24px;
+}
+
+.card-item-img
+{
+    width: 48px;
+    height: 48px;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)
