@@ -340,6 +340,15 @@ select
 
 @font-face
 {
+    font-family: 'SourceSansPro-Semibold';
+    font-weight: normal;
+    font-style: normal; 
+
+    src: url('../fonts/SourceSansPro-Semibold.ttf');
+}
+
+@font-face
+{
     font-family: 'SourceSansPro-Bold';
     font-weight: normal;
     font-style: normal; 
@@ -1348,6 +1357,53 @@ ol
     width: 48px;
     height: 48px;
     margin-right: auto;
+}
+
+.footer-wrapper
+{
+    color: rgba(255, 255, 255, .6); 
+    background: #00172e;
+}
+
+.footer
+{
+    font-family: 'SourceSansPro-Regular', serif; 
+
+    padding-top: 48px;
+    padding-bottom: 56px;
+}
+
+.footer-list-title
+{
+    font-family: 'SourceSansPro-Semibold', serif;
+
+    margin-bottom: 12px; 
+
+    color: #fff;
+}
+
+.footer-list
+{
+    margin-bottom: 0;
+    margin-bottom: 56px; 
+
+    list-style: none;
+}
+.footer-list li
+{
+    margin-bottom: 0;
+}
+.footer-list:last-child
+{
+    margin-bottom: 56px;
+}
+.footer-list li
+{
+    margin-bottom: 8px;
+}
+.footer-list li:last-child
+{
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)

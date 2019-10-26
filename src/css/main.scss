@@ -688,4 +688,32 @@ ol {
   margin-right: auto;
 }
 
+.footer-wrapper {
+  background: $dark-blue;
+  color: rgba(255,255,255, .6);
+}
+.footer {
+  padding-top: 48px;
+  padding-bottom: 56px;
+  font-family: 'SourceSansPro-Regular', serif;
+}
+.footer-list-title {
+  font-family: 'SourceSansPro-Semibold', serif;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-list {
+  @include clear-list();
+  margin-bottom: 56px;
+  &:last-child {
+    margin-bottom: 56px;
+  }
+  li {
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 @import 'media';
