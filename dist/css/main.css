@@ -1364,13 +1364,18 @@ ol
     color: rgba(255, 255, 255, .6); 
     background: #00172e;
 }
+.footer-wrapper address
+{
+    display: block;
+
+    margin-bottom: 12px;
+}
 
 .footer
 {
     font-family: 'SourceSansPro-Regular', serif; 
 
     padding-top: 48px;
-    padding-bottom: 56px;
 }
 
 .footer-list-title
@@ -1403,6 +1408,113 @@ ol
 }
 .footer-list li:last-child
 {
+    margin-bottom: 0;
+}
+
+.bottom-footer
+{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.contacts-list
+{
+    margin-bottom: 0; 
+
+    list-style: none;
+}
+.contacts-list li
+{
+    margin-bottom: 0;
+}
+.contacts-list a
+{
+    color: #fff;
+}
+.contacts-list a:hover
+{
+    color: #f0c500;
+}
+
+.social-list
+{
+    margin-bottom: 0; 
+
+    list-style: none;
+}
+.social-list li
+{
+    margin-bottom: 0;
+}
+.social-list li a
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.social-list li:hover .item-icon svg
+{
+    fill: #fff;
+}
+.social-list li:hover .item-title
+{
+    color: #fff;
+}
+.social-list .item-icon
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; 
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.social-list .item-icon svg
+{
+    fill: rgba(255, 255, 255, .3);
+}
+
+.footer-copywrite
+{
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.sidebar .card-item
+{
+            flex-direction: column-reverse;
+
+    max-width: 280px;
+    min-height: auto;
+    margin-bottom: 24px; 
+    margin-left: auto;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+}
+
+.sidebar .card-item-title
+{
+    margin-top: 24px; 
     margin-bottom: 0;
 }
 

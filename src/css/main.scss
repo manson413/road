@@ -691,10 +691,13 @@ ol {
 .footer-wrapper {
   background: $dark-blue;
   color: rgba(255,255,255, .6);
+  address {
+    display: block;
+    margin-bottom: 12px;
+  }
 }
 .footer {
   padding-top: 48px;
-  padding-bottom: 56px;
   font-family: 'SourceSansPro-Regular', serif;
 }
 .footer-list-title {
@@ -713,6 +716,67 @@ ol {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+.bottom-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.contacts-list {
+  @include  clear-list();
+  a {
+    color: #fff;
+    &:hover {
+      color: $yellow-color;
+    }
+  }
+}
+.social-list {
+  @include  clear-list();
+  li {
+    a {
+      display: flex;
+      align-items: center;
+    }
+    &:hover {
+      .item-icon {
+        svg {
+          fill: #fff;
+        }
+      }
+      .item-title {
+        color: #fff;
+      }
+    }
+  }
+  .item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    svg {
+      fill: rgba(255,255,255, .3);
+    }
+  }
+}
+.footer-copywrite {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+
+.sidebar {
+  .card-item {
+    max-width: 280px;
+    margin-left: auto;
+    flex-direction: column-reverse;
+    min-height: auto;
+    margin-bottom: 24px;
+  }
+  .card-item-title {
+    margin-bottom: 0;
+    margin-top: 24px;
   }
 }
 
