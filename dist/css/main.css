@@ -446,6 +446,17 @@ h2,
 
     margin-bottom: 48px;
 }
+@media screen and (max-width: 767px)
+{
+    h2,
+    .h2
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-bottom: 24px;
+    }
+}
 
 h3,
 .h3
@@ -486,6 +497,7 @@ ol,
 ul
 {
     margin-bottom: 16px;
+    padding-left: 16px;
 }
 ol li,
 ul li
@@ -784,6 +796,7 @@ ol
         margin-bottom: 0;
         padding-top: 24px;
         padding-bottom: 24px;
+        padding-left: 0;
 
         list-style: none;
 
@@ -839,6 +852,7 @@ ol
         margin-bottom: 0;
         padding-top: 24px;
         padding-bottom: 24px;
+        padding-left: 0;
 
         list-style: none;
 
@@ -979,6 +993,8 @@ ol
 {
     width: 24px;
     height: 3px;
+
+    background: #00458a;
 }
 
 .hamburger
@@ -1233,6 +1249,10 @@ ol
 
     border-bottom: 1px solid #acacac;
 }
+.post-item a
+{
+    display: block;
+}
 
 .post-img
 {
@@ -1377,6 +1397,10 @@ ol
 
     padding-top: 48px;
 }
+.footer .container
+{
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
 
 .footer-list-title
 {
@@ -1391,6 +1415,7 @@ ol
 {
     margin-bottom: 0;
     margin-bottom: 56px; 
+    padding-left: 0;
 
     list-style: none;
 }
@@ -1406,6 +1431,12 @@ ol
 {
     margin-bottom: 8px;
 }
+.footer-list li:hover a
+{
+    text-decoration: underline; 
+
+    color: #fff;
+}
 .footer-list li:last-child
 {
     margin-bottom: 0;
@@ -1419,7 +1450,8 @@ ol
 
 .contacts-list
 {
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    padding-left: 0; 
 
     list-style: none;
 }
@@ -1438,7 +1470,8 @@ ol
 
 .social-list
 {
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    padding-left: 0; 
 
     list-style: none;
 }
@@ -1460,7 +1493,7 @@ ol
 }
 .social-list li:hover .item-icon svg
 {
-    fill: #fff;
+    fill: rgba(255, 255, 255, .7);
 }
 .social-list li:hover .item-title
 {
@@ -1516,6 +1549,32 @@ ol
 {
     margin-top: 24px; 
     margin-bottom: 0;
+}
+
+.sidebar .post-img
+{
+    margin-bottom: 24px;
+}
+
+.sidebar .post-date
+{
+    margin-bottom: 0;
+}
+
+.sidebar .post-item
+{
+    margin-bottom: 24px; 
+
+    border: none;
+}
+.sidebar .post-item:last-child
+{
+    margin-bottom: 0;
+}
+
+.sidebar .posts-wrapper
+{
+    margin-bottom: 104px;
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)
@@ -1845,6 +1904,98 @@ ol
         margin-right: 16px; 
         margin-left: 0;
     }
+    .sidebar
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column; 
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .sidebar h2
+    {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+                order: 2;
+    }
+    .sidebar .sidebar-cards
+    {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+                order: 1;
+    }
+    .sidebar .posts-wrapper
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+
+        margin-bottom: 0;
+
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+                order: 3;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .sidebar .posts-wrapper .post-item
+    {
+        width: calc(50% - 16px);
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(odd)
+    {
+        margin-right: 16px; 
+        margin-left: 0;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(even)
+    {
+        margin-right: 0; 
+        margin-left: 16px;
+    }
+    .sidebar .card-item
+    {
+        width: calc(50% - 16px); 
+        max-width: none;
+    }
+    .sidebar .card-item:nth-child(odd)
+    {
+        margin-right: 16px; 
+        margin-left: 0;
+    }
+    .sidebar .card-item:nth-child(even)
+    {
+        margin-right: 0; 
+        margin-left: 16px;
+    }
+    .sidebar-cards
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+
+        margin-bottom: 96px; 
+        padding-top: 48px;
+        padding-bottom: 24px;
+
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .news .read-more-btn
+    {
+        margin-bottom: 96px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -2104,5 +2255,81 @@ ol
     .main-slider .item-bg
     {
         background-position-x: 58%;
+    }
+    .section-padding
+    {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .post-item
+    {
+        margin-bottom: 24px;
+    }
+    .post-item:last-child
+    {
+        margin-bottom: 0;
+    }
+    .post-img
+    {
+        margin-bottom: 24px;
+    }
+    .news .read-more-btn
+    {
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+    .sidebar .posts-wrapper .post-item
+    {
+        width: 100%;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(even)
+    {
+        margin-left: 0;
+    }
+    .sidebar .card-item
+    {
+        width: 100%;
+    }
+    .sidebar .card-item:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+    .sidebar .card-item:nth-child(even)
+    {
+        margin-left: 0;
+    }
+    .sidebar-cards
+    {
+        margin-bottom: 48px;
+    }
+    .cards-block
+    {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .footer
+    {
+        padding-top: 24px;
+    }
+    .footer-list
+    {
+        margin-bottom: 32px;
+    }
+    .footer-list:last-child
+    {
+        margin-bottom: 32px;
+    }
+    .bottom-footer
+    {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .bottom-footer .social-list
+    {
+        padding-top: 32px;
     }
 }

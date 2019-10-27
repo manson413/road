@@ -10,6 +10,7 @@ $yellow-color: #F0C500;
 @mixin clear-list {
   list-style: none;
   margin-bottom: 0;
+  padding-left: 0;
   li {
     margin-bottom: 0;
   }
@@ -75,6 +76,11 @@ h2, .h2 {
   line-height: 36px;
   margin-bottom: 48px;
   font-family: 'SourceSerifPro-Bold', serif;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
 }
 
 h3, .h3 {
@@ -103,7 +109,7 @@ p {
 
 ol, ul {
   margin-bottom: 16px;
-
+  padding-left: 16px;
   li {
     margin-bottom: 4px;
 
@@ -451,6 +457,7 @@ ol {
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   width: 24px;
   height: 3px;
+  background: $blue-color;
 }
 
 .hamburger {
@@ -620,6 +627,9 @@ ol {
   padding-bottom: 24px;
   border-bottom: 1px solid #ACACAC;
   margin-bottom: 48px;
+  a {
+    display: block;
+  }
 }
 .post-img {
   background-repeat: no-repeat;
@@ -699,6 +709,9 @@ ol {
 .footer {
   padding-top: 48px;
   font-family: 'SourceSansPro-Regular', serif;
+  .container {
+    border-bottom: 1px solid rgba(255,255,255, .2);
+  }
 }
 .footer-list-title {
   font-family: 'SourceSansPro-Semibold', serif;
@@ -713,6 +726,12 @@ ol {
   }
   li {
     margin-bottom: 8px;
+    &:hover {
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -741,7 +760,7 @@ ol {
     &:hover {
       .item-icon {
         svg {
-          fill: #fff;
+          fill: rgba(255,255,255, .7);
         }
       }
       .item-title {
@@ -777,6 +796,22 @@ ol {
   .card-item-title {
     margin-bottom: 0;
     margin-top: 24px;
+  }
+  .post-img {
+    margin-bottom: 24px;
+  }
+  .post-date {
+    margin-bottom: 0;
+  }
+  .post-item {
+    border: none;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .posts-wrapper {
+    margin-bottom: 104px;
   }
 }
 

@@ -325,6 +325,98 @@
         margin-right: 16px; 
         margin-left: 0;
     }
+    .sidebar
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: column; 
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+    }
+    .sidebar h2
+    {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+                order: 2;
+    }
+    .sidebar .sidebar-cards
+    {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+                order: 1;
+    }
+    .sidebar .posts-wrapper
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+
+        margin-bottom: 0;
+
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+        -ms-flex-order: 3;
+                order: 3;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .sidebar .posts-wrapper .post-item
+    {
+        width: calc(50% - 16px);
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(odd)
+    {
+        margin-right: 16px; 
+        margin-left: 0;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(even)
+    {
+        margin-right: 0; 
+        margin-left: 16px;
+    }
+    .sidebar .card-item
+    {
+        width: calc(50% - 16px); 
+        max-width: none;
+    }
+    .sidebar .card-item:nth-child(odd)
+    {
+        margin-right: 16px; 
+        margin-left: 0;
+    }
+    .sidebar .card-item:nth-child(even)
+    {
+        margin-right: 0; 
+        margin-left: 16px;
+    }
+    .sidebar-cards
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+
+        margin-bottom: 96px; 
+        padding-top: 48px;
+        padding-bottom: 24px;
+
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .news .read-more-btn
+    {
+        margin-bottom: 96px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -584,5 +676,81 @@
     .main-slider .item-bg
     {
         background-position-x: 58%;
+    }
+    .section-padding
+    {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .post-item
+    {
+        margin-bottom: 24px;
+    }
+    .post-item:last-child
+    {
+        margin-bottom: 0;
+    }
+    .post-img
+    {
+        margin-bottom: 24px;
+    }
+    .news .read-more-btn
+    {
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+    .sidebar .posts-wrapper .post-item
+    {
+        width: 100%;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+    .sidebar .posts-wrapper .post-item:nth-child(even)
+    {
+        margin-left: 0;
+    }
+    .sidebar .card-item
+    {
+        width: 100%;
+    }
+    .sidebar .card-item:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+    .sidebar .card-item:nth-child(even)
+    {
+        margin-left: 0;
+    }
+    .sidebar-cards
+    {
+        margin-bottom: 48px;
+    }
+    .cards-block
+    {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .footer
+    {
+        padding-top: 24px;
+    }
+    .footer-list
+    {
+        margin-bottom: 32px;
+    }
+    .footer-list:last-child
+    {
+        margin-bottom: 32px;
+    }
+    .bottom-footer
+    {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .bottom-footer .social-list
+    {
+        padding-top: 32px;
     }
 }
