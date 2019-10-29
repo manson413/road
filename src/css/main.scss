@@ -89,6 +89,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+  font-family: 'SourceSerifPro-Bold', serif;
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 12px;
@@ -129,6 +130,35 @@ ul {
 
 ol {
   list-style: decimal inside;
+}
+
+.breadcrumbs {
+  @include clear-list();
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.breadcrumb-item {
+  color: $dark-blue;
+  white-space: nowrap;
+  &:after {
+    content: '/';
+    padding: 0 8px;
+  }
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+  a {
+    color: #5E5E5E;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .btn {
@@ -675,6 +705,14 @@ ol {
     margin-top: -32px;
   }
 }
+
+.people-wrapper {
+  margin-top: -32px;
+  div[class^="col"] {
+    margin-top: 32px;
+  }
+}
+
 .card-item {
   @include transition();
   display: flex;
@@ -812,6 +850,20 @@ ol {
   }
   .posts-wrapper {
     margin-bottom: 104px;
+  }
+}
+
+.people-item {
+  .item-img {
+    height: 280px;
+    overflow: hidden;
+    background: url(../img/user-bg.jpg)no-repeat center/cover;
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 

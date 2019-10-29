@@ -273,6 +273,11 @@ $blue-color: #00458A;
       margin-bottom: 96px;
     }
   }
+  .people-item {
+    .item-img {
+      height: 240px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px){
@@ -521,5 +526,13 @@ $blue-color: #00458A;
     .social-list {
       padding-top: 32px;
     }
+  }
+  .people-item {
+    .item-position {
+      padding-bottom: 12px;
+    }
+  }
+  .card-item {
+    min-height: 144px;
   }
 }

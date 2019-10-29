@@ -468,6 +468,7 @@ h3,
 h4,
 .h4
 {
+    font-family: 'SourceSerifPro-Bold', serif;
     font-size: 20px;
     line-height: 32px;
 
@@ -523,6 +524,58 @@ ul
 ol
 {
     list-style: decimal inside;
+}
+
+.breadcrumbs
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    overflow-x: auto;
+
+    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px; 
+    padding-left: 0;
+
+    list-style: none;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.breadcrumbs li
+{
+    margin-bottom: 0;
+}
+
+.breadcrumb-item
+{
+    white-space: nowrap; 
+
+    color: #00172e;
+}
+.breadcrumb-item:after
+{
+    padding: 0 8px; 
+
+    content: '/';
+}
+.breadcrumb-item:last-child:after
+{
+    display: none;
+}
+.breadcrumb-item a
+{
+    text-decoration: none; 
+
+    color: #5e5e5e;
+}
+.breadcrumb-item a:hover
+{
+    text-decoration: underline;
 }
 
 .btn
@@ -1333,6 +1386,15 @@ ol
     margin-top: -32px;
 }
 
+.people-wrapper
+{
+    margin-top: -32px;
+}
+.people-wrapper div[class^='col']
+{
+    margin-top: 32px;
+}
+
 .card-item
 {
     display: -webkit-box;
@@ -1575,6 +1637,24 @@ ol
 .sidebar .posts-wrapper
 {
     margin-bottom: 104px;
+}
+
+.people-item .item-img
+{
+    overflow: hidden;
+
+    height: 280px;
+    margin-bottom: 24px; 
+
+    background: url(../img/user-bg.jpg) no-repeat center/cover;
+}
+.people-item .item-img img
+{
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)
@@ -1996,6 +2076,10 @@ ol
     {
         margin-bottom: 96px;
     }
+    .people-item .item-img
+    {
+        height: 240px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -2331,5 +2415,13 @@ ol
     .bottom-footer .social-list
     {
         padding-top: 32px;
+    }
+    .people-item .item-position
+    {
+        padding-bottom: 12px;
+    }
+    .card-item
+    {
+        min-height: 144px;
     }
 }
