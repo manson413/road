@@ -426,6 +426,14 @@ h1,
 
     margin-bottom: 16px;
 }
+h1 + h2,
+h1 + .h2,
+.h1 + h2,
+.h1 + .h2
+{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
 @media screen and (max-width: 767px)
 {
     h1,
@@ -1657,6 +1665,54 @@ ol
        object-fit: cover;
 }
 
+.structure-row h2,
+.structure-row .h2
+{
+    margin-bottom: 8px;
+}
+
+.structure-row .col-lg-4:nth-child(1),
+.structure-row .col-lg-4:nth-child(2)
+{
+    border-bottom: 1px solid #acacac;
+}
+
+.structure-item
+{
+    font-size: 20px;
+    line-height: 32px; 
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.structure-item a
+{
+    color: #00458a;
+}
+.structure-item a:hover
+{
+    text-decoration: underline;
+}
+.structure-item ul
+{
+    margin-bottom: 0;
+    padding-left: 0; 
+
+    list-style: none;
+}
+.structure-item ul li
+{
+    margin-bottom: 0;
+}
+.structure-item ul li
+{
+    margin-bottom: 24px;
+}
+.structure-item ul li:last-child
+{
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li
@@ -2080,6 +2136,10 @@ ol
     {
         height: 240px;
     }
+    .structure-mobile-row
+    {
+        padding-top: 64px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -2115,6 +2175,11 @@ ol
 
 @media screen and (max-width: 767px)
 {
+    .breadcrumbs
+    {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
     .logo
     {
         margin-right: 0;
@@ -2423,5 +2488,41 @@ ol
     .card-item
     {
         min-height: 144px;
+    }
+    h1 + h2,
+    h1 + .h2,
+    .h1 + h2,
+    .h1 + .h2
+    {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    .structure-row .col-lg-4:nth-child(1)
+    {
+        border-bottom: none;
+    }
+    .structure-row .col-lg-4:nth-child(1) .structure-item
+    {
+        padding-top: 12px;
+    }
+    .structure-row .col-lg-4:nth-child(2)
+    {
+        border-bottom: none;
+    }
+    .structure-row .col-lg-4:nth-child(2) h2,
+    .structure-row .col-lg-4:nth-child(2) .h2
+    {
+        display: none;
+    }
+    .structure-row .col-lg-4:nth-child(2) .structure-item
+    {
+        padding-top: 0;
+        padding-bottom: 36px;
+
+        border-bottom: 1px solid #acacac;
+    }
+    .structure-mobile-row
+    {
+        display: none;
     }
 }

@@ -421,6 +421,10 @@
     {
         height: 240px;
     }
+    .structure-mobile-row
+    {
+        padding-top: 64px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -456,6 +460,11 @@
 
 @media screen and (max-width: 767px)
 {
+    .breadcrumbs
+    {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
     .logo
     {
         margin-right: 0;
@@ -764,5 +773,41 @@
     .card-item
     {
         min-height: 144px;
+    }
+    h1 + h2,
+    h1 + .h2,
+    .h1 + h2,
+    .h1 + .h2
+    {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    .structure-row .col-lg-4:nth-child(1)
+    {
+        border-bottom: none;
+    }
+    .structure-row .col-lg-4:nth-child(1) .structure-item
+    {
+        padding-top: 12px;
+    }
+    .structure-row .col-lg-4:nth-child(2)
+    {
+        border-bottom: none;
+    }
+    .structure-row .col-lg-4:nth-child(2) h2,
+    .structure-row .col-lg-4:nth-child(2) .h2
+    {
+        display: none;
+    }
+    .structure-row .col-lg-4:nth-child(2) .structure-item
+    {
+        padding-top: 0;
+        padding-bottom: 36px;
+
+        border-bottom: 1px solid #acacac;
+    }
+    .structure-mobile-row
+    {
+        display: none;
     }
 }

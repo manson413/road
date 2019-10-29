@@ -64,6 +64,10 @@ h1, .h1 {
   font-size: 36px;
   line-height: 44px;
   margin-bottom: 16px;
+  &+h2, &+.h2 {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
   @media screen and (max-width: 767px) {
     font-size: 28px;
     line-height: 36px;
@@ -863,6 +867,38 @@ ol {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.structure-row {
+  h2, .h2 {
+    margin-bottom: 8px;
+  }
+  .col-lg-4 {
+    &:nth-child(1), &:nth-child(2) {
+      border-bottom: 1px solid #ACACAC;
+    }
+  }
+}
+.structure-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 20px;
+  line-height: 32px;
+  a {
+    color: $blue-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    @include clear-list();
+    li {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

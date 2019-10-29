@@ -96,6 +96,9 @@ function pageView() {
         $('.search-btn').appendTo($('#mainMenu'));
         $('#desktop-search-wrap .search-block').appendTo('#mainMenu');
         $('.header .header-contacts').appendTo('#mainMenuWrapper>.container');
+        $('.employee-block').each(function(){
+            $(this).appendTo('#mobile-row');
+        });
     } else {
         $('#mainMenu .search-block').appendTo('#desktop-search-wrap>.container');
         $('#mainMenuWrapper .header-contacts').appendTo('.header .header-inner-wrapper');
