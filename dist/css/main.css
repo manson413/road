@@ -358,7 +358,7 @@ select
 
 body
 {
-    font-family: 'SourceSerifPro-Regular', serif;
+    font-family: 'SourceSerifPro-Regular', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -500,6 +500,12 @@ p
 p:last-child
 {
     margin-bottom: 0;
+}
+
+b,
+strong
+{
+    font-family: 'SourceSerifPro-Bold', serif;
 }
 
 ol,
@@ -1687,6 +1693,8 @@ ol
 }
 .structure-item a
 {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+
     color: #00458a;
 }
 .structure-item a:hover
@@ -1711,6 +1719,24 @@ ol
 .structure-item ul li:last-child
 {
     margin-bottom: 0;
+}
+
+.contact-item
+{
+    margin-bottom: 48px;
+}
+.contact-item .item-title
+{
+    font-family: 'SourceSansPro-Regular', sans-serif;
+
+    white-space: nowrap; 
+
+    color: #5e5e5e;
+}
+
+.contacts-wrap
+{
+    padding-top: 48px;
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)
@@ -1839,6 +1865,7 @@ ol
 
         width: 100%; 
         margin-bottom: 0;
+        padding-left: 0;
 
         list-style: none;
     }
@@ -1897,7 +1924,7 @@ ol
     {
         display: block;
 
-        padding: 12px 40px 12px 16px;
+        padding: 12px 16px 12px 16px;
     }
     .main-menu ul
     {
@@ -1910,6 +1937,7 @@ ol
 
         width: 58%;
         margin-bottom: 0;
+        padding-left: 0;
         padding-left: 16px;
 
         list-style: none;
@@ -1996,10 +2024,14 @@ ol
     }
     .main-menu-wrap .header-contacts .item
     {
+        margin-bottom: 24px; 
+
         border-right: none;
     }
     .main-menu-wrap .header-contacts .item:last-child
     {
+        margin-top: 24px; 
+        margin-bottom: 0;
         padding-right: 16px;
     }
     .main-menu-wrap .language-toggle
@@ -2306,7 +2338,8 @@ ol
     }
     .mobile-submenu-wrap ul
     {
-        margin-bottom: 0; 
+        margin-bottom: 0;
+        padding-left: 0; 
 
         list-style: none;
     }
@@ -2524,5 +2557,17 @@ ol
     .structure-mobile-row
     {
         display: none;
+    }
+    .main-menu-wrap .header-contacts .item:last-child
+    {
+        margin-top: 0;
+    }
+    .contacts-wrap
+    {
+        padding-top: 32px;
+    }
+    .contact-item
+    {
+        margin-bottom: 24px;
     }
 }

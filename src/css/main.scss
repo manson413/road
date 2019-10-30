@@ -22,7 +22,7 @@ $yellow-color: #F0C500;
 
 body {
   min-width: 320px;
-  font-family: 'SourceSerifPro-Regular', serif;
+  font-family: 'SourceSerifPro-Regular', sans-serif;
   //font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -110,6 +110,10 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+b, strong {
+  font-family: 'SourceSerifPro-Bold', serif;
 }
 
 ol, ul {
@@ -887,6 +891,7 @@ ol {
   font-size: 20px;
   line-height: 32px;
   a {
+    font-family: 'SourceSansPro-Regular', sans-serif;
     color: $blue-color;
     &:hover {
       text-decoration: underline;
@@ -901,6 +906,17 @@ ol {
       }
     }
   }
+}
+.contact-item {
+  margin-bottom: 48px;
+  .item-title {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    color: #5E5E5E;
+    white-space: nowrap;
+  }
+}
+.contacts-wrap {
+  padding-top: 48px;
 }
 
 @import 'media';
