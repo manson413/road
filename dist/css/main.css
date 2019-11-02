@@ -356,9 +356,25 @@ select
     src: url('../fonts/SourceSansPro-Bold.ttf');
 }
 
+.visually-hidden
+{
+    position: absolute !important;
+
+    overflow: hidden; 
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
 body
 {
-    font-family: 'SourceSerifPro-Regular', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -421,6 +437,7 @@ svg
 h1,
 .h1
 {
+    font-family: 'SourceSerifPro-Regular', serif; 
     font-size: 36px;
     line-height: 44px;
 
@@ -496,6 +513,22 @@ h6,
 p
 {
     margin: 0 0 16px;
+}
+p a
+{
+    text-decoration: underline; 
+
+    color: #00458a;
+}
+p a:hover
+{
+    text-decoration: none; 
+
+    color: #00458a;
+}
+p a:visited
+{
+    color: #00458a;
 }
 p:last-child
 {
@@ -849,6 +882,11 @@ ol
 .search-btn .close-icon
 {
     display: none;
+}
+
+.main-menu
+{
+    font-family: 'SourceSerifPro-Regular', serif;
 }
 
 @media screen and (min-width: 992px)
@@ -1739,6 +1777,159 @@ ol
     padding-top: 48px;
 }
 
+.vacancy-price
+{
+    font-family: 'SourceSansPro-Regular', serif;
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #5e5e5e;
+}
+
+.vacancy-accordion h4,
+.vacancy-accordion .h4
+{
+    margin-bottom: 0;
+}
+.vacancy-accordion h4:hover,
+.vacancy-accordion .h4:hover
+{
+    color: #00458a;
+}
+
+.vacancy-accordion .accordion-item-body
+{
+    display: none;
+
+    max-width: 600px; 
+    padding-top: 24px;
+}
+
+.vacancy-accordion p
+{
+    margin-bottom: 12px;
+}
+
+.vacancy-accordion .accordion-item-title
+{
+    position: relative;
+
+    padding-right: 48px; 
+
+    cursor: pointer;
+}
+.vacancy-accordion .accordion-item-title svg
+{
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    width: 24px;
+    height: 24px;
+
+    -webkit-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
+
+    fill: #5e5e5e;
+}
+
+.vacancy-accordion .accordion-item
+{
+    padding: 24px;
+
+    border-bottom: 1px solid #acacac;
+}
+.vacancy-accordion .accordion-item.active h4,
+.vacancy-accordion .accordion-item.active .h4
+{
+    color: #00458a;
+}
+.vacancy-accordion .accordion-item.active .accordion-item-title svg
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+
+    fill: #00458a;
+}
+
+.download-file-block
+{
+    font-family: 'SourceSansPro-Regular', serif; 
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.download-file-link
+{
+    position: relative;
+
+    display: inline-block;
+
+    max-width: 100%; 
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.download-file-link .svg-icon
+{
+    position: absolute; 
+
+    width: 24px;
+    height: 24px;
+}
+.download-file-link .file-icon
+{
+    top: 0;
+    left: 0;
+
+    fill: #00458a;
+}
+.download-file-link .download-icon
+{
+    top: 0;
+    right: 0;
+
+    fill: #5e5e5e;
+}
+.download-file-link:hover .download-icon
+{
+    fill: #00458a;
+}
+
+.download-file-name
+{
+    font-size: 20px;
+    line-height: 32px;
+
+    display: block;
+    overflow: hidden;
+
+    max-width: 600px;
+
+    white-space: nowrap;
+       text-overflow: ellipsis; 
+
+    -o-text-overflow: ellipsis;
+}
+
+.download-file-info
+{
+    display: block;
+
+    color: #5e5e5e;
+}
+
+.block-info
+{
+    font-family: 'SourceSansPro-Regular', serif;
+    font-size: 20px;
+    line-height: 32px; 
+
+    padding-top: 48px;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li
@@ -2569,5 +2760,10 @@ ol
     .contact-item
     {
         margin-bottom: 24px;
+    }
+    .vacancy-accordion .accordion-item
+    {
+        padding-right: 0; 
+        padding-left: 0;
     }
 }

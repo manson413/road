@@ -624,4 +624,10 @@ $blue-color: #00458A;
   .contact-item {
     margin-bottom: 24px;
   }
+  .vacancy-accordion {
+    .accordion-item {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

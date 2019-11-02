@@ -829,4 +829,9 @@
     {
         margin-bottom: 24px;
     }
+    .vacancy-accordion .accordion-item
+    {
+        padding-right: 0; 
+        padding-left: 0;
+    }
 }

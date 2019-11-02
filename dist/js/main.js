@@ -76,6 +76,12 @@ $(document).ready(function () {
             '            </button>'
     });
 
+    //accordion
+    $('.accordion-item-title').on('click', function(){
+        $(this).closest('.accordion-item').toggleClass('active');
+        $(this).closest('.accordion-item').find('.accordion-item-body').stop().slideToggle();
+    });
+
     pageView();
 
     //hide preloader
