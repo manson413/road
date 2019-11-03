@@ -834,4 +834,8 @@
         padding-right: 0; 
         padding-left: 0;
     }
+    .video-gallery-item
+    {
+        padding-top: 24px;
+    }
 }

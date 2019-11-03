@@ -89,10 +89,6 @@ $(document).ready(function () {
         $('#preloader').fadeOut(300);
     }, 300);
 
-    $('#ww').text($(window).outerWidth());
-    $('#wh').text($(window).outerHeight());
-    $('#list').text($('#mainMenu>li:first>a').outerWidth());
-
 });
 
 $(window).resize(pageView);
