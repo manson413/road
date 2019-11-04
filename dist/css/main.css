@@ -1928,14 +1928,14 @@ ol
     padding-top: 48px;
 }
 
-.video-block
+.gallery-item-img
 {
     position: relative;
 
     margin-bottom: 24px; 
     padding-bottom: 56.25%;
 }
-.video-block .iframe-block
+.gallery-item-img .iframe-block
 {
     position: absolute;
     z-index: 1;
@@ -1946,7 +1946,7 @@ ol
 
     overflow: hidden;
 }
-.video-block .video-preview
+.gallery-item-img .img-preview
 {
     position: absolute;
     z-index: 2;
@@ -1959,7 +1959,7 @@ ol
     -o-object-fit: cover;
        object-fit: cover;
 }
-.video-block .play-video-btn
+.gallery-item-img .play-video-btn
 {
     position: absolute;
     z-index: 3;
@@ -1976,16 +1976,16 @@ ol
     border: none; 
     background: transparent;
 }
-.video-block .play-video-btn:hover .ytp-large-play-button-bg
+.gallery-item-img .play-video-btn:hover .ytp-large-play-button-bg
 {
     fill: #f00;
     fill-opacity: 1;
 }
-.video-block .iframe-block
+.gallery-item-img .iframe-block
 {
     display: none;
 }
-.video-block .iframe-block iframe
+.gallery-item-img .iframe-block iframe
 {
     width: 100%;
     height: 100%;
@@ -1993,17 +1993,17 @@ ol
     -o-object-fit: cover;
        object-fit: cover;
 }
-.video-block.playing .iframe-block
+.gallery-item-img.playing .iframe-block
 {
     display: block;
 }
-.video-block.playing .video-preview,
-.video-block.playing .play-video-btn
+.gallery-item-img.playing .img-preview,
+.gallery-item-img.playing .play-video-btn
 {
     display: none;
 }
 
-.video-gallery-item
+.gallery-item
 {
     padding-top: 48px;
 }
@@ -2844,7 +2844,7 @@ ol
         padding-right: 0; 
         padding-left: 0;
     }
-    .video-gallery-item
+    .gallery-item
     {
         padding-top: 24px;
     }
