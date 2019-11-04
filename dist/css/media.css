@@ -838,4 +838,12 @@
     {
         padding-top: 24px;
     }
+    .photo-gallery-item
+    {
+        margin-top: 16px;
+    }
+    .photo-gallery-wrap .inner-wrap
+    {
+        margin-top: 16px;
+    }
 }

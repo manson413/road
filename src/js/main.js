@@ -82,6 +82,32 @@ $(document).ready(function () {
         $(this).closest('.accordion-item').find('.accordion-item-body').stop().slideToggle();
     });
 
+    //img gallery
+    $('[data-fancybox="photo"]').fancybox({
+        loop : true,
+        protect: true,
+        transitionEffect : 'circular',
+        transitionDuration : 500,
+        thumbs : {
+            autoStart   : false,
+            hideOnClose : false
+        },
+        lang : 'ru',
+        i18n : {
+            'ru' : {
+                CLOSE       : 'Закрыть',
+                NEXT        : 'Следующий',
+                PREV        : 'Предыдущий',
+                ERROR       : 'Ошибка',
+                PLAY_START  : 'Старт',
+                PLAY_STOP   : 'Стоп',
+                FULL_SCREEN : 'На весь экран',
+                THUMBS      : 'THUMBS'
+            }
+        },
+        buttons : ['close']
+    });
+
     pageView();
 
     //hide preloader

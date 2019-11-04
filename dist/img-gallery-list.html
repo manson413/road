@@ -9,13 +9,14 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="format-detection" content="telephone=no">
-    <meta name="developer" content="dZENcode IT-Company"/>
+    <meta name="developer" content="Dream-Team"/>
     <meta name="theme-color" content="#00172E">
     <meta name="msapplication-navbutton-color" content="#00172E">
     <meta name="apple-mobile-web-app-capable" content="#00172E">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/bootstrap4grid.css" rel="stylesheet">
     <link href="css/hamburgers.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!-- Template Basic Images Start -->
@@ -176,7 +177,7 @@
 
     <section class="gallery-section section-padding">
         <div class="container">
-            <h1>Відеогалерея</h1>
+            <h1>Фотогалерея</h1>
 
             <div class="row">
 
@@ -265,61 +266,63 @@
     <!-- /.contacts -->
 
     <nav class="pagination-wrap" aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" aria-label="Previous" href="#">
-                    <svg class="icon-sprite svg-icon">
-                    	<use xlink:href="img/symbol_sprite.svg#icon-chevron-arrow-left"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">...</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">5</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">6</a>
-            </li>
-            <li class="page-item active">
-                <a class="page-link" href="#">7</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">8</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">9</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">...</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">38</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">39</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">40</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" aria-label="Next" href="#">
-                    <svg class="icon-sprite svg-icon">
-                        <use xlink:href="img/symbol_sprite.svg#icon-chevron-arrow-right"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+        <div class="container">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" aria-label="Previous" href="#">
+                        <svg class="icon-sprite svg-icon">
+                            <use xlink:href="img/symbol_sprite.svg#icon-chevron-arrow-left"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">...</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">6</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">7</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">8</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">9</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">...</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">38</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">39</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">40</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" aria-label="Next" href="#">
+                        <svg class="icon-sprite svg-icon">
+                            <use xlink:href="img/symbol_sprite.svg#icon-chevron-arrow-right"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="cards-block">
@@ -548,6 +551,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 
 <script src="js/weather.js"></script>
 <script src="js/video-iframe.js"></script>
