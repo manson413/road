@@ -1107,5 +1107,43 @@ ol {
   padding-top: 48px;
 }
 
+.pagination {
+  @include clear-list();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  color: $blue-color;
+  border: 1px solid $blue-color;
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: $blue-color;
+  }
+  &:hover {
+    background: $blue-color;
+    color: #fff;
+    svg {
+      fill: #fff;
+    }
+  }
+}
+.page-item {
+  margin: 0 4px;
+  &.active {
+    .page-link {
+      background: $blue-color;
+      color: #fff;
+    }
+  }
+}
+
 
 @import 'media';
