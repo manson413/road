@@ -108,6 +108,13 @@ $(document).ready(function () {
         buttons : ['close']
     });
 
+    $('.modal-btn').fancybox({
+        hideOnOverlayClick: true,
+        hideOnContentClick: true,
+        enableEscapeButton: true,
+        showCloseButton: true
+    });
+
     pageView();
 
     //hide preloader

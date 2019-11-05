@@ -2138,6 +2138,34 @@ ol
        object-fit: cover;
 }
 
+.modal
+{
+    display: none;
+}
+
+.modal-form
+{
+    max-width: 692px;
+    padding: 48px;
+
+    background: #fff;
+}
+
+.input-block
+{
+    margin-bottom: 24px;
+}
+
+.input-badge
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    display: block;
+
+    color: #757575;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li

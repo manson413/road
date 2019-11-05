@@ -1178,4 +1178,21 @@ ol {
     }
   }
 }
+.modal {
+  display: none;
+}
+.modal-form {
+  max-width: 692px;
+  padding: 48px;
+  background: #fff;
+}
+.input-block {
+  margin-bottom: 24px;
+}
+.input-badge {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
 @import 'media';
