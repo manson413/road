@@ -1182,7 +1182,8 @@ ol {
   display: none;
 }
 .modal-form {
-  max-width: 692px;
+  width: 100%;
+  max-width: 592px;
   padding: 48px;
   background: #fff;
 }
@@ -1195,4 +1196,12 @@ ol {
   line-height: 24px;
   color: #757575;
 }
+textarea.form-control {
+  resize: none;
+  min-height: 144px;
+}
+.fancybox-slide--html {
+  background-color: rgba($dark-blue, .25);
+}
+
 @import 'media';

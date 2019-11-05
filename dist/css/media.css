@@ -431,6 +431,10 @@
     {
         padding-top: 64px;
     }
+    .modal-form
+    {
+        padding: 32px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -845,5 +849,21 @@
     .photo-gallery-wrap .inner-wrap
     {
         margin-top: 16px;
+    }
+    .modal-form
+    {
+        padding: 24px;
+    }
+    .input-block
+    {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 374px)
+{
+    .modal-form
+    {
+        padding: 16px;
     }
 }

@@ -2145,7 +2145,8 @@ ol
 
 .modal-form
 {
-    max-width: 692px;
+    width: 100%;
+    max-width: 592px;
     padding: 48px;
 
     background: #fff;
@@ -2164,6 +2165,18 @@ ol
     display: block;
 
     color: #757575;
+}
+
+textarea.form-control
+{
+    min-height: 144px; 
+
+    resize: none;
+}
+
+.fancybox-slide--html
+{
+    background-color: rgba(0, 23, 46, .25);
 }
 
 @media screen and (max-width: 1299px) and (min-width: 992px)
@@ -2599,6 +2612,10 @@ ol
     {
         padding-top: 64px;
     }
+    .modal-form
+    {
+        padding: 32px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -3013,5 +3030,21 @@ ol
     .photo-gallery-wrap .inner-wrap
     {
         margin-top: 16px;
+    }
+    .modal-form
+    {
+        padding: 24px;
+    }
+    .input-block
+    {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 374px)
+{
+    .modal-form
+    {
+        padding: 16px;
     }
 }
