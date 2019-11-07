@@ -435,6 +435,19 @@
     {
         padding: 32px;
     }
+    .road-tabs .post-item .col-md-6
+    {
+        max-width: 100%;
+
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+    .road-tabs .post-item .post-img
+    {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -858,6 +871,14 @@
     {
         margin-bottom: 16px;
     }
+    .block-info
+    {
+        padding-top: 32px;
+    }
+    .road-tabs .tab-content-wrap
+    {
+        padding-top: 32px;
+    }
 }
 
 @media screen and (max-width: 374px)
@@ -865,5 +886,9 @@
     .modal-form
     {
         padding: 16px;
+    }
+    .road-tabs .tab-btn
+    {
+        margin-right: 24px;
     }
 }

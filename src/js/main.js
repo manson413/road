@@ -108,11 +108,22 @@ $(document).ready(function () {
         buttons : ['close']
     });
 
+    //open modal
     $('.modal-btn').fancybox({
         hideOnOverlayClick: true,
         hideOnContentClick: true,
         enableEscapeButton: true,
         showCloseButton: true
+    });
+
+    //tabs
+    $('.tab-btn').on('click', function(){
+        let id = $(this).attr('data-tab');
+        $(this).closest('.tabs-wrap').find('.tab-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $(this).closest('.tabs-wrap').find('.tab-content').removeClass('show');
+        $(this).closest('.tabs-wrap').find('.tab-content[data-tab='+id+']').addClass('show');
     });
 
     pageView();

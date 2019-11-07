@@ -1349,6 +1349,9 @@ ol
 
 .post-item
 {
+    font-size: 16px;
+    line-height: 24px;
+
     margin-bottom: 48px; 
     padding-bottom: 24px;
 
@@ -2179,6 +2182,54 @@ textarea.form-control
     background-color: rgba(0, 23, 46, .25);
 }
 
+.tab-content
+{
+    display: none;
+}
+.tab-content.show
+{
+    display: block;
+}
+
+.road-tabs .tabs-row
+{
+    overflow-x: auto;
+
+    max-width: 100%;
+}
+
+.road-tabs .tab-btn
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-right: 32px;
+    padding-bottom: 8px;
+
+    white-space: nowrap; 
+
+    border-bottom: 2px solid transparent;
+    background: transparent;
+}
+.road-tabs .tab-btn:hover
+{
+    color: #00458a;
+}
+.road-tabs .tab-btn.active
+{
+    color: #00458a;
+    border-bottom: 2px solid #00458a;
+}
+.road-tabs .tab-btn:last-child
+{
+    margin-right: 0;
+}
+
+.road-tabs .tab-content-wrap
+{
+    padding-top: 46px;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li
@@ -2616,6 +2667,19 @@ textarea.form-control
     {
         padding: 32px;
     }
+    .road-tabs .post-item .col-md-6
+    {
+        max-width: 100%;
+
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+    .road-tabs .post-item .post-img
+    {
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -3039,6 +3103,14 @@ textarea.form-control
     {
         margin-bottom: 16px;
     }
+    .block-info
+    {
+        padding-top: 32px;
+    }
+    .road-tabs .tab-content-wrap
+    {
+        padding-top: 32px;
+    }
 }
 
 @media screen and (max-width: 374px)
@@ -3046,5 +3118,9 @@ textarea.form-control
     .modal-form
     {
         padding: 16px;
+    }
+    .road-tabs .tab-btn
+    {
+        margin-right: 24px;
     }
 }

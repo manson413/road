@@ -688,6 +688,8 @@ ol {
   padding-bottom: 96px;
 }
 .post-item {
+  font-size: 16px;
+  line-height: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ACACAC;
   margin-bottom: 48px;
@@ -1202,6 +1204,42 @@ textarea.form-control {
 }
 .fancybox-slide--html {
   background-color: rgba($dark-blue, .25);
+}
+
+.tab-content {
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
+.road-tabs {
+  .tabs-row {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .tab-btn {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    margin-right: 32px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    &:hover {
+      color: $blue-color;
+    }
+    &.active {
+      color: $blue-color;
+      border-bottom: 2px solid $blue-color;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .tab-content-wrap {
+    padding-top: 46px;
+  }
 }
 
 @import 'media';
