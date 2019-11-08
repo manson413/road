@@ -1242,4 +1242,13 @@ textarea.form-control {
   }
 }
 
+.post-gallery {
+  .photo-gallery-item {
+    a {
+      padding-bottom: 66.6%;
+    }
+  }
+}
+
+
 @import 'media';

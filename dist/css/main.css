@@ -2230,6 +2230,11 @@ textarea.form-control
     padding-top: 46px;
 }
 
+.post-gallery .photo-gallery-item a
+{
+    padding-bottom: 66.6%;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li
