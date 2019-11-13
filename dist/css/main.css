@@ -610,6 +610,17 @@ ol
 
     content: '/';
 }
+.breadcrumb-item:last-child
+{
+    overflow: hidden;
+
+    max-width: 700px; 
+
+    white-space: nowrap;
+       text-overflow: ellipsis;
+
+    -o-text-overflow: ellipsis;
+}
 .breadcrumb-item:last-child:after
 {
     display: none;
@@ -2724,6 +2735,12 @@ textarea.form-control
     {
         padding-top: 12px;
         padding-bottom: 12px;
+    }
+    .breadcrumb-item:last-child
+    {
+        overflow: visible; 
+
+        max-width: none;
     }
     .logo
     {

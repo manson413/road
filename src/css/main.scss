@@ -178,6 +178,10 @@ ol {
     padding: 0 8px;
   }
   &:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 700px;
     &:after {
       display: none;
     }

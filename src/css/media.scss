@@ -356,6 +356,10 @@ $blue-color: #00458A;
     padding-top: 12px;
     padding-bottom: 12px;
   }
+  .breadcrumb-item:last-child {
+    max-width: none;
+    overflow: visible;
+  }
   .logo {
     margin-right: 0;
 

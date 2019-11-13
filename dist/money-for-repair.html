@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="developer" content="Dream-Team"/>
+    <meta name="theme-color" content="#00172E">
+    <meta name="msapplication-navbutton-color" content="#00172E">
+    <meta name="apple-mobile-web-app-capable" content="#00172E">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/bootstrap4grid.css" rel="stylesheet">
+    <link href="css/hamburgers.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon/favicon.ico">
+</head>
+
+<body>
+<div class="preloader" id="preloader">
+    <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="104px" height="13px" viewBox="0 0 128 16" xml:space="preserve"><rect x="0" y="0" width="100%" height="100%" fill="#E5E5E5"/><path fill="#94b1ce" fill-opacity="0.42" d="M6.4,4.8A3.2,3.2,0,1,1,3.2,8,3.2,3.2,0,0,1,6.4,4.8Zm12.8,0A3.2,3.2,0,1,1,16,8,3.2,3.2,0,0,1,19.2,4.8ZM32,4.8A3.2,3.2,0,1,1,28.8,8,3.2,3.2,0,0,1,32,4.8Zm12.8,0A3.2,3.2,0,1,1,41.6,8,3.2,3.2,0,0,1,44.8,4.8Zm12.8,0A3.2,3.2,0,1,1,54.4,8,3.2,3.2,0,0,1,57.6,4.8Zm12.8,0A3.2,3.2,0,1,1,67.2,8,3.2,3.2,0,0,1,70.4,4.8Zm12.8,0A3.2,3.2,0,1,1,80,8,3.2,3.2,0,0,1,83.2,4.8ZM96,4.8A3.2,3.2,0,1,1,92.8,8,3.2,3.2,0,0,1,96,4.8Zm12.8,0A3.2,3.2,0,1,1,105.6,8,3.2,3.2,0,0,1,108.8,4.8Zm12.8,0A3.2,3.2,0,1,1,118.4,8,3.2,3.2,0,0,1,121.6,4.8Z"/><g transform="translate(87.5 0)"><path fill="#00458a" fill-opacity="1" d="M-42.7,3.84A4.16,4.16,0,0,1-38.54,8a4.16,4.16,0,0,1-4.16,4.16A4.16,4.16,0,0,1-46.86,8,4.16,4.16,0,0,1-42.7,3.84Zm12.8-.64A4.8,4.8,0,0,1-25.1,8a4.8,4.8,0,0,1-4.8,4.8A4.8,4.8,0,0,1-34.7,8,4.8,4.8,0,0,1-29.9,3.2Zm12.8-.64A5.44,5.44,0,0,1-11.66,8a5.44,5.44,0,0,1-5.44,5.44A5.44,5.44,0,0,1-22.54,8,5.44,5.44,0,0,1-17.1,2.56Z"/><animateTransform attributeName="transform" type="translate" values="23 0;36 0;49 0;62 0;74.5 0;87.5 0;100 0;113 0;125.5 0;138.5 0;151.5 0;164.5 0;178 0" calcMode="discrete" dur="1170ms" repeatCount="indefinite"/></g></svg>
+</div>
+
+
+<div class="header-wrapper">
+
+    <header class="header" role="header">
+        <div class="container">
+
+            <div class="header-inner-wrapper">
+                <div class="logo kharkiv-logo">
+                    <div class="logo-img" title="Харківська обласна державна адміністрація">
+                        <img src="img/COA_of_Kharkiv_Oblast.svg" alt="Харківська обласна державна адміністрація">
+                    </div>
+                    <span class="logo-text">Харківська обласна державна адміністрація</span>
+                </div>
+                <a href="/" class="logo dp-logo" title="Головна">
+                    <div class="logo-img">
+                        <img src="img/logo.svg" alt="Державне підприємство «Дороги Харківщини»" loading="lazy">
+                    </div>
+                    <span class="logo-text">Державне підприємство «Дороги Харківщини»</span>
+                </a>
+                <div class="header-contacts">
+                    <div class="item">
+                        <a href="tel:380573368283" class="item-title">(057) 336-82-83</a>
+                        <div class="item-text">Facebook: <a href="https://www.facebook.com/dpdorKharkiv/" target="_blank">@dpdorKharkiv</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="item-title">Харків: <span id="temp"></span></div>
+                        <div class="item-text">Перейти на <a href="https://www.gismeteo.ua/weather-kharkiv-5053/" target="_blank">Gismetio</a></div>
+                    </div>
+                    <div class="item">
+                        <div class="language-toggle">
+                            <a href="" class="language-btn active">Ua</a>
+                            <a href="" class="language-btn">Ru</a>
+                        </div>
+                        <!-- /.language-toggle -->
+                    </div>
+                </div>
+                <!-- /.header-contacts -->
+
+                <div class="mobile-menu-btn-wrap hamburger hamburger--spin-r">
+                    <button type="button" class="hamburger-box mobile-menu-btn">
+                        <span class="hamburger-inner"></span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- /.header-inner-wrapper -->
+
+        </div>
+    </header>
+
+    <nav class="main-menu-wrap" id="mainMenuWrapper">
+        <div class="container">
+            <div class="d-block d-md-flex align-items-center justify-content-between">
+                <ul class="main-menu" id="mainMenu">
+                    <li>
+                        <a href="">Про ДП «Дороги Харківщини»</a>
+                        <ul>
+                            <li><a href="">Загальна інформація</a></li>
+                            <li><a href="">Керівництво</a></li>
+                            <li><a href="">Структура</a></li>
+                            <li><a href="">Контакти</a></li>
+                            <li><a href="">Відкриті вакансії</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Діяльність</a>
+                        <ul>
+                            <li><a href="">Ремонт доріг</a></li>
+                            <li><a href="">Експлуатаційне утримання</a></li>
+                            <li><a href="">Фінансово-економічна інформація</a></li>
+                            <li><a href="">Події</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Водіям та перевізникам</a>
+                        <ul>
+                            <li><a href="">Великогабаритні та великовагові транспортні засоби</a></li>
+                            <li><a href="">Порядок подання заявок та отримання погоджень</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Зв’язок з громадськістю</a>
+                        <ul>
+                            <li><a href="">Звернення громадян</a></li>
+                            <li><a href="">Порядок складання та подання запитів на доступ до публічної інформації</a></li>
+                            <li><a href="">Графік особистого прийому громадян</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Галерея</a>
+                        <ul>
+                            <li><a href="">Фото</a></li>
+                            <li><a href="">Відео</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.main-menu -->
+                <div id="mobile-submenu-wrap" class="mobile-submenu-wrap"></div>
+                <!-- /#mobile-submenu-wrap -->
+                <button type="button" class="search-btn">
+                    <svg class="search-icon icon-sprite svg-icon" style="width: 18px; height: 18px;">
+                    	<use xlink:href="img/symbol_sprite.svg#icon-search-icon"></use>
+                    </svg>
+                    <svg class="close-icon icon-sprite svg-icon" style="width: 18px; height: 18px;">
+                        <use xlink:href="img/symbol_sprite.svg#icon-close-icon"></use>
+                    </svg>
+                    <span class="btn-text">Пошук</span>
+                </button>
+            </div>
+        </div>
+        <div id="main-menu-overlay"></div>
+        <!-- /#main-menu-overlay -->
+        <div id="desktop-search-wrap" class="desktop-search-wrap">
+            <div class="container">
+                <div class="search-block">
+                    <form action="/">
+                        <div class="d-block d-lg-flex align-items-end">
+                            <div class="input-wrap">
+                                <label class="input-title" for="search-field">Пошук</label>
+                                <input type="text" class="form-control" id="search-field">
+                            </div>
+                            <!-- /.input-wrap -->
+                            <input type="submit" class="btn yellow-btn" value="Знайти">
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.search-block -->
+            </div>
+        </div>
+    </nav>
+
+</div>
+<!-- /.header-wrapper -->
+
+<main role="main">
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                <li class="breadcrumb-item"><a href="#">Діяльність</a></li>
+                <li class="breadcrumb-item"><a href="#">Фінансово-економічна інформація</a></li>
+                <li class="breadcrumb-item active" aria-current="page">На ремонт доріг місцевого значення, вулиць і доріг комунальної власності в Харківській області виділено 818,6 млн. грн.</li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="tabs section-padding">
+        <div class="container">
+
+            <h1>На ремонт доріг місцевого значення, вулиць і доріг комунальної власності в Харківській області виділено 818,6 млн. грн.</h1>
+            <time class="post-date">20.09.2019, 17:00</time>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-8">
+                    <div class="block-info">
+<p>Розвиток дорожньої інфраструктури стабільно залишається одним із пріоритетів бюджетного фінансування.</p>
+                        <p>Що дає свої результати: <b>в 2016 році</b> було <b>відновлено 900 км доріг, в 2017-му</b> — вже <b>понад 2100 км, в 2018-му</b> — <b>3800 км доріг.</b></p>
+                        <p><b>В 2019 р на дороги виділено 56 млрд грн.</b> що на 7,4 млрд. грн. більше, ніж у 2018 році. Субвенція на фінансове забезпечення автомобільних доріг загального користування місцевого значення, вулиць і доріг комунальної власності складає 14,7 млрд. грн або 35% Державного дорожнього фонду, що на 3,2 млрд. грн більше ніж минулого року.</p>
+                        <p>На ремонт доріг місцевого значення, вулиць і доріг комунальної власності в Харківській області виділено 818,6 млн. грн, з порівнянням 656,2 млн. грн в минулому році.</p>
+                    </div>
+                    <!-- /.block-info -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- /.contacts -->
+
+    <div class="cards-block">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Укравтодор</h5>
+                        <img class="card-item-img" src="img/logo_uad.svg" alt="Укравтодор" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Служба автомобільних доріг у Харківській області</h5>
+                        <img class="card-item-img" src="img/logo_uad.svg"
+                             alt="Служба автомобільних доріг у Харківській області" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Президент України. Офіційне інтернет-представництво</h5>
+                        <img class="card-item-img" src="img/ukr-emblem.svg"
+                             alt="Президент України. Офіційне інтернет- представництво" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Урядовий портал</h5>
+                        <img class="card-item-img" src="img/ukr-emblem.svg" alt="Урядовий портал"
+                             loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Верховна рада України</h5>
+                        <img class="card-item-img" src="img/ukr-emblem.svg" alt="Верховна рада України"
+                             loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">ProZorro. Публічні закупівлі</h5>
+                        <img class="card-item-img" src="img/prozorro-logo.svg"
+                             alt="ProZorro. Публічні закупівлі" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Децентралізація</h5>
+                        <img class="card-item-img" src="img/decentral-logo.svg" alt="Децентралізація"
+                             loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Державна служба України з безпеки на транспорті</h5>
+                        <img class="card-item-img" src="img/transport-sec-logo.jpg"
+                             alt="Державна служба України з безпеки на транспорті" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Національна поліція Харківська область</h5>
+                        <img class="card-item-img" src="img/nac-pol-logo.svg"
+                             alt="Національна поліція Харківська область" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Державна архітектурно-будівельна інспекція україни</h5>
+                        <img class="card-item-img" src="img/dabi-logo.jpg"
+                             alt="Державна архітектурно- будівельна інспекція україни" loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Державне підприємство «Державний дорожній науково-дослідний
+                            інститут імені М.П.Шульгiна»</h5>
+                        <img class="card-item-img" src="img/shulgin-logo.jpg"
+                             alt="Державне підприємство «Державний дорожній науково-дослідний інститут імені М.П.Шульгiна»"
+                             loading="lazy">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <a href="" class="card-item">
+                        <h5 class="card-item-title">Харківський автомобільно- дорожній університет</h5>
+                        <img class="card-item-img" src="img/auto-uni-logo.jpg"
+                             alt="Харківський автомобільно- дорожній університет" loading="lazy">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.cards-block -->
+
+
+</main>
+
+<div class="footer-wrapper">
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-3">
+					<h5 class="footer-list-title">Про ДП «Дороги Харківщини</h5>
+					<ul class="footer-list">
+						<li><a href="">Загальна інформація</a></li>
+						<li><a href="">Керівництво</a></li>
+						<li><a href="">Структура</a></li>
+						<li><a href="">Контакти</a></li>
+						<li><a href="">Відкриті вакансії</a></li>
+					</ul>
+					<!-- /.footer-list -->
+				</div>
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-3">
+					<h5 class="footer-list-title">Діяльність</h5>
+					<ul class="footer-list">
+						<li><a href="">Ремонт доріг</a></li>
+						<li><a href="">Експлуатаційне утримання</a></li>
+						<li><a href="">Фінансово-економічна інформація</a></li>
+						<li><a href="">Події</a></li>
+						<li><a href="">Державні закупівлі</a></li>
+						<li><a href="">Нормативно-правова база</a></li>
+					</ul>
+					<!-- /.footer-list -->
+				</div>
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-3">
+					<h5 class="footer-list-title">Водіям та перевізникам</h5>
+					<ul class="footer-list">
+						<li><a href="">Великогабаритні та великовагові транспортні засоби</a></li>
+						<li><a href="">Порядок подання заявок та отримання погоджень</a></li>
+						<li><a href="">Перекриття доріг</a></li>
+					</ul>
+					<!-- /.footer-list -->
+				</div>
+				<div class="col-xl-3 d-none d-xl-block"></div>
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-3">
+					<h5 class="footer-list-title">Зв’язок з громадськістю</h5>
+					<ul class="footer-list">
+						<li><a href="">Звернення громадян</a></li>
+						<li><a href="">Порядок складання та подання запитів на доступ до публічної інформації</a></li>
+						<li><a href="">Графік особистого прийому громадян</a></li>
+					</ul>
+					<!-- /.footer-list -->
+				</div>
+				<div class="col-12 col-sm-6 col-lg-6 col-xl-3">
+					<h5 class="footer-list-title">Галерея</h5>
+					<ul class="footer-list">
+						<li><a href="">Фото</a></li>
+						<li><a href="">Відео</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</footer>
+	<div class="bottom-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<address>61202, м. Харків, вул. Ахсарова, 2</address>
+					<ul class="contacts-list">
+						<li><a href="tel:+380573368283">(057) 336-82-83</a></li>
+						<li><a href="mailto:dor.kh@ukr.net">dor.kh@ukr.net</a></li>
+					</ul>
+					<!-- /.contacts-list -->
+				</div>
+				<div class="col-12 col-sm-6 d-block d-sm-flex justify-content-end">
+					<ul class="social-list">
+						<li>
+							<a href="">
+								<i class="item-icon">
+									<svg class="search-icon icon-sprite svg-icon">
+										<use xlink:href="img/symbol_sprite.svg#icon-facebook-icon"></use>
+									</svg>
+								</i>
+								<span class="item-title">Facebook</span>
+							</a>
+						</li>
+					</ul>
+					<!-- /.social-list -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.bottom-footer -->
+	<div class="footer-copywrite">
+		<div class="container">
+			&copy;&nbsp;Державне підприємство «Дороги Харківщини», 2019
+		</div>
+	</div>
+	<!-- /.footer-copywrite -->
+</div>
+<!-- /.footer-wrapper -->
+
+<!-- modals -->
+<div id="modal" class="modal modal-form">
+    <form action="">
+        <fieldset>
+            <legend class="h2">Форма зворотнього зв'язку</legend>
+            <div class="input-block">
+                <label for="field-name" class="input-title">Прізвище, ім’я та по батькові</label>
+                <span class="input-badge">Кирилицею</span>
+                <input type="text" class="form-control" id="field-name" name="name">
+            </div>
+            <!-- /.input-block -->
+            <div class="input-block">
+                <label for="field-post" class="input-title">Поштова адреса</label>
+                <input type="text" class="form-control" id="field-post" name="post">
+            </div>
+            <!-- /.input-block -->
+            <div class="input-block">
+                <label for="field-email" class="input-title">Електронна адреса</label>
+                <input type="text" class="form-control" id="field-email" name="email">
+            </div>
+            <!-- /.input-block -->
+            <div class="input-block">
+                <label for="field-text" class="input-title">Звернення</label>
+                <span class="input-badge">180 / 200 символів</span>
+                <textarea class="form-control" id="field-text" name="message"></textarea>
+            </div>
+            <!-- /.input-block -->
+            <input type="submit" class="btn yellow-btn" value="Надіслати">
+        </fieldset>
+    </form>
+</div>
+<!-- </modals -->
+
+<script>
+    /**
+     * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+     *
+     * @private
+     * @author Todd Motto
+     * @link https://github.com/toddmotto/foreach
+     * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+     * @callback requestCallback      callback   - Callback function for each iteration.
+     * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+     * @returns {}
+     */
+    var forEach = function (t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+            for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else
+            for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+    };
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+        forEach(hamburgers, function (hamburger) {
+            hamburger.addEventListener("click", function () {
+                this.classList.toggle("is-active");
+            }, false);
+        });
+    }
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="js/weather.js"></script>
+<script src="js/video-iframe.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

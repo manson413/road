@@ -488,6 +488,12 @@
         padding-top: 12px;
         padding-bottom: 12px;
     }
+    .breadcrumb-item:last-child
+    {
+        overflow: visible; 
+
+        max-width: none;
+    }
     .logo
     {
         margin-right: 0;
