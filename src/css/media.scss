@@ -317,6 +317,9 @@ $blue-color: #00458A;
       }
     }
   }
+  .schedule-item {
+    padding: 24px 16px 36px;
+  }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -676,6 +679,23 @@ $blue-color: #00458A;
       padding-top: 32px;
     }
   }
+  .schedule-row {
+    display: block;
+    margin-bottom: 16px;
+  }
+  .schedule-item {
+    width: 100%;
+    padding: 16px 0;
+    .item-title {
+      margin-bottom: 16px;
+    }
+    &:nth-child(2){
+      .item-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 374px){

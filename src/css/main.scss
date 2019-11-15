@@ -1269,4 +1269,23 @@ a.d-block {
   word-wrap: break-word;
 }
 
+.schedule-row {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #ACACAC;
+}
+.schedule-item {
+  width: 50%;
+  min-width: 50%;
+  padding: 24px 24px 36px;
+  .item-title {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .item-name {
+    color: #5E5E5E;
+  }
+}
+
 @import 'media';

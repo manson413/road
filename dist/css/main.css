@@ -2266,6 +2266,39 @@ a.d-block
     word-wrap: break-word;
 }
 
+.schedule-row
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    border-bottom: 1px solid #acacac; 
+
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.schedule-item
+{
+    width: 50%;
+    min-width: 50%;
+    padding: 24px 24px 36px;
+}
+.schedule-item .item-title
+{
+    font-size: 20px;
+    line-height: 32px;
+
+    margin-bottom: 24px;
+}
+.schedule-item .item-name
+{
+    color: #5e5e5e;
+}
+
 @media screen and (max-width: 1299px) and (min-width: 992px)
 {
     .main-menu > li
@@ -2716,6 +2749,10 @@ a.d-block
     {
         margin-bottom: 16px;
     }
+    .schedule-item
+    {
+        padding: 24px 16px 36px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -3152,6 +3189,25 @@ a.d-block
     .road-tabs .tab-content-wrap
     {
         padding-top: 32px;
+    }
+    .schedule-row
+    {
+        display: block;
+
+        margin-bottom: 16px;
+    }
+    .schedule-item
+    {
+        width: 100%;
+        padding: 16px 0;
+    }
+    .schedule-item .item-title
+    {
+        margin-bottom: 16px;
+    }
+    .schedule-item:nth-child(2) .item-title
+    {
+        margin-bottom: 0;
     }
 }
 

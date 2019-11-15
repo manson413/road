@@ -448,6 +448,10 @@
     {
         margin-bottom: 16px;
     }
+    .schedule-item
+    {
+        padding: 24px 16px 36px;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px)
@@ -884,6 +888,25 @@
     .road-tabs .tab-content-wrap
     {
         padding-top: 32px;
+    }
+    .schedule-row
+    {
+        display: block;
+
+        margin-bottom: 16px;
+    }
+    .schedule-item
+    {
+        width: 100%;
+        padding: 16px 0;
+    }
+    .schedule-item .item-title
+    {
+        margin-bottom: 16px;
+    }
+    .schedule-item:nth-child(2) .item-title
+    {
+        margin-bottom: 0;
     }
 }
 
