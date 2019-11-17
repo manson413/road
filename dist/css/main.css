@@ -964,7 +964,7 @@ ol
                 flex-direction: column;
 
         min-width: 190%; 
-        max-height: 175px;
+        max-height: 200px;
         margin-bottom: 0;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -988,9 +988,9 @@ ol
     }
     .main-menu > li > ul li
     {
-        min-width: 190px;
-        margin-right: 100px; 
-        margin-bottom: 12px;
+        min-width: 290px;
+        padding-right: 50px; 
+        padding-bottom: 12px;
     }
     .main-menu > li > ul li:last-child
     {

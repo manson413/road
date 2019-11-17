@@ -7,7 +7,6 @@ function getVideoId(el){
 
 document.querySelectorAll('.video-block').forEach(function(el){
     let id = getVideoId(el);
-    console.log(id);
     el.querySelector('.img-preview').src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
 });
 
